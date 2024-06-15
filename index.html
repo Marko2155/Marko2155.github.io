@@ -1,47 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marko2155</title>
-    <style>
-        body {
-            background-color: black;
-        }
+<html>
+	<head>
+		<title>Marko2155</title>
+		<style>
+			textarea {
+				border: none;
+				resize: none;
+				width: 100%;
+				height: 100%;
+				font-family: monospace;
+				color: green;
+				background-color: black;
+				user-select: none;
+				outline: none;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+			}
 
-        h1 {
-            color: green;
-            font-family: 'Lucida Console', monospace;
-        }
+			body {
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<textarea readonly="true" unselectable="true"></textarea>
+	</body>
+	<script>
 
-        p {
-            color: green;
-            font-family: 'Lucida Console', monospace;
-        }
 
-        a {
-            font-family: 'Lucida Console', monospace;
-        }
-    </style>
-</head>
-<body style="text-align: center;">
-    <img src="https://yt3.ggpht.com/cnIg5zy8XCjD6smX01tnMpBOiL9VCp96j3magMJlj5bK9s4gS3Lt8CHiHjijhxpcrO1enEU-sA=s108-c-k-c0x00ffffff-no-rj"/>
-    <h1>Hello!</h1>
-    <p>My name is Marko, a 10 year old from Albania, passionate about computers and trying to be popular on YouTube.</p>
-    <h1>Where you can find me!</h1>
-    <a href="https://youtube.com/c/Marko2155" style="color: red;">YouTube</a>
-    <a href="https://reddit.com/u/Marko2155" style="color: orangered">Reddit</a>
-    <a href="https://SPLASHStudios.github.io" style="color: teal">SPLASH!</a>
-    <h1>Projects</h1>
-    <a href="./ALU.xlsx">Excel ALU</a>
-    <a href="./hotel.mcstructure">Minecraft Hotel (Structure)</a>
-    <a href="./hotel.mcworld">Minecraft Hotel (World)</a>
-    <a href="https://htmlgle.onrender.com">HTMLgle</a>
-    <a href="./Redstone thing.zip">A thing i made in redstone</a>
-    <h1>Goals</h1>
-    <p>YouTube: To reach 1k subs</p>
-    <p>SPLASH!: To be popular</p>
-    <h1>Thank you for reading!</h1>
-    <p>If you like what i do, please consider subscribing to my YouTube channel or downloading one of my games! It really helps!</p>
-</body>
+		function appearChars(str, elem, timeBetween) {
+    			var index = -1;
+    			(function go() {
+        			if (++index < str.length) {
+         				elem.innerHTML = elem.innerHTML + str.charAt(index);
+            				setTimeout(go, timeBetween);
+        			}
+    			})();
+		}
+		var cmd = document.querySelector('textarea');
+		cmd.innerHTML = "root@html:~$ "
+		let cmdString = "get info://marko2155\n[GET] Requesting info://marko2155...\n[GET] Request response received and processed. Sending response to STDOUT.\n[START info://marko2155]\nHello!\nMy name is Marko, a 10 year old from Albania who enjoys games and programming.\nBefore we start, there's 2 things i wanna say. \n1: if you want my old website, it's here: https://marko2155.strangled.net/old.html\n2: Every link on this website has to be selected and manually copy-pasted into the address bar.\nPlaces where you can find me:\nYouTube: https://youtube.com/c/Marko2155\nGitHub: https://github.com/Marko2155\nDiscord: marko2155\nMy games website: https://SPLASHStudios.github.io/\nProjects:\nExcel ALU: https://marko2155.strangled.net/ALU.xlsx\nRedstone computer: https://marko2155.strangled.net/Redstone thing.zip\nHotel (structure): https://marko2155.strangled.net/hotel.mcstructure\nHotel (world): https://marko2155.strangled.net/hotel.mcworld\nWelp, that's about it. If you wanna support me, be sure to download one of my games, projects or subscribe to my channel!\nLast updated 15/06/24\n[END info://marko2155]\nroot@html:~$"
+		appearChars(cmdString, cmd, 100)
+	</script>
 </html>
